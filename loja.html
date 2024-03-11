@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/loja.css">
     <title>Petshop - Loja</title>
 
     <!-- 
@@ -17,12 +18,20 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>Nossa Loja</h1>
+        <div class="container_logo">
+            <img src="assets/images/logo.jpg" alt="Imagem logo" class="img_logo" width="50px"/>
+            <h1>Nossa Loja</h1>
+        </div>
+         <div class="mobile_menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="loja.html">Loja</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <ul class="ul">
+                <li class="li"><a href="index.html">Home</a></li>
+                <li class="li"><a href="loja.html">Loja</a></li>
+                <l class="li"><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -30,18 +39,25 @@
     <!-- Conteúdo principal -->
     <main>
         <section>
-            <h2>Produtos</h2>
-            <p>Aqui você encontrará uma variedade de produtos para o seu pet, incluindo alimentos, brinquedos, coleiras e muito mais!</p>
+            <div class="container_produtos">
+                <h2 class="titulos">Produtos</h2>
+                <p>Aqui você encontrará uma variedade de produtos para o seu pet,
+                incluindo alimentos, brinquedos, coleiras e muito mais!</p>
+            </div>
         </section>
         <section>
-            <h2>Promoções</h2>
-            <p>Aproveite nossas ofertas especiais e descontos exclusivos em diversos produtos para deixar seu animalzinho feliz!</p>
+            <div class="container_promocoes">
+                <h2 class="titulos">Promoções</h2>
+                <p>Aproveite nossas ofertas especiais e descontos exclusivos 
+                    em diversos produtos para deixar seu animalzinho feliz!</p>
+            </div>
         </section>
     </main>
 
     <!-- Rodapé -->
     <footer>
-        <p>© 2024 Petshop. Todos os direitos reservados.</p>
+        <p class="footer_desc">© 2024 Petshop. Todos os direitos reservados.</p>
     </footer>
+    <script src="assets/js/nav.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contato.css">
     <title>Petshop - Contato</title>
         <!-- 
 
@@ -19,12 +20,20 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>Entre em Contato</h1>
+       <div class="container_logo">
+            <img src="assets/images/logo.jpg" alt="Imagem Logo" class="img_logo" width="50px"/>
+            <h1>Entre em Contato</h1>
+       </div>
+        <div class="mobile_menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="loja.html">Loja</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <ul class="ul">
+                <li class="li"><a href="index.html">Home</a></li>
+                <li class="li"><a href="loja.html">Loja</a></li>
+                <li class="li"><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -32,21 +41,45 @@
     <!-- Conteúdo principal -->
     <main>
         <section>
-            <h2>Informações de Contato</h2>
-            <p>Entre em contato conosco para agendar serviços, tirar dúvidas ou fornecer feedback. Estamos aqui para ajudar!</p>
-            <p>Telefone: (XX) XXXX-XXXX</p>
-            <p>Email: contato@petshop.com</p>
+            <div class="container_contato">
+                <h2 class="titulos">Informações de Contato</h2>
+                <p>Entre em contato conosco para agendar serviços, tirar dúvidas ou fornecer feedback. Estamos aqui para ajudar!</p>
+                <p>Telefone: (XX) XXXX-XXXX</p>
+                <p>Email: contato@petshop.com</p>
+            </div>
         </section>
         <!-- 
 
-            Adicionar um formulário de contato com campos para nome, email, telefone e mensagem.
-
+            Adicionar um formulário de contato com campos para nome,
+             email, telefone e mensagem
         -->
+       <section class="formulario">
+        <form>
+           <div class="box_form">
+            <label class="nome" for="nome">Nome:</label>
+            <input type="text" name="name" id="name"/>
+           </div>
+            <div class="box_form">
+                <label class="email" for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ex: email@email.com"/>
+            </div>
+            <div class="box_form">
+                <label class="tel" for="number">Telefone:</label>
+            <input type="number" name="tel" id="tel" placeholder="ex: (12) 12345-6789"/>
+            </div>
+            <div class="box_comentario">
+                <label class="comentario" for="nome">Comentário:</label>
+            <textarea rows="5" cols="40"></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
+       </section>
     </main>
 
     <!-- Rodapé -->
     <footer>
-        <p></p>
+        <p class="footer_desc desc">© 2024 Petshop. Todos os direitos reservados.</p>
     </footer>
+    <script src="assets/js/nav.js"></script>
 </body>
 </html>
