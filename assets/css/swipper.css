@@ -1,0 +1,62 @@
+@import url("variaveis.css");
+
+
+.secao_swipper {
+    max-width: 390px;
+    display: flex;
+    
+}
+
+.carrosel {
+    display: flex;
+    overflow: hidden;
+}
+
+.container_swipper {
+    width: var(--largura-swipper);
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    
+}
+
+.img_lazer,
+.img_game,
+.img_curta {
+    width: var(--largura-swipper);
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.box_text {
+    background-color: var(--bg-box);
+    width: var(--largura-swipper);
+    position: absolute;
+    top: 112px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title_esportes,
+.title_fortnite,
+.title_curta {
+    font-family: var(--font-secundaria);    
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    padding: 5px;
+}
+
+.sub_curta {
+    font-family: var(--font-secundaria);
+    font-size: 9px;
+    font-weight: 200;
+    color: white;
+    padding: 2px;   
+}
+
+
+/* .swipper-none {
+    display: none;
+} */

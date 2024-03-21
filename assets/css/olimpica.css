@@ -1,0 +1,35 @@
+@import url("variaveis.css");
+
+.olimpica {
+    max-width: 390px;
+}
+
+.container_olimpica {
+    width: var(--largura-swipper);
+    align-items: center;
+    margin: 12px;
+    position: relative;
+}
+
+.img_olimpica {
+    width: var(--largura-swipper);
+    border-radius: 10px;
+    position: relative;
+}
+
+.box_olimpica {
+    background-color: var(--bg-box);
+    width: var(--largura-swipper);
+    position: absolute;
+    top: 93px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title_olimpica {
+    font-family: var(--font-secundaria);    
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 5px;
+}
